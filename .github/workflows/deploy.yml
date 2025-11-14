@@ -5,7 +5,7 @@ on:
     branches: 'main'
 
 jobs:
-  build_site:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,9 +13,16 @@ jobs:
 
       # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
       - name: Install pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install
@@ -33,7 +40,7 @@ jobs:
             path: 'build/'
 
   deploy:
-    needs: build_site
+    needs: build
     runs-on: ubuntu-latest
 
     permissions:
