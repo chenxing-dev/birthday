@@ -1,8 +1,8 @@
 <main
-	class="relative grid min-h-[90svh] items-center justify-items-start px-6 sm:px-10 md:min-h-screen md:px-16 lg:px-24 xl:px-32"
+	class="relative grid min-h-[90svh] items-end justify-items-start px-6 sm:px-10 md:min-h-screen md:items-center md:px-16 md:pb-0 lg:px-24 xl:px-32"
 >
 	<div>
-		<h1 class="font-sans text-[clamp(3.5rem,10vw,16rem)] leading-[1] text-white">
+		<h1 class="font-sans text-[clamp(5.5rem,18vw,16rem)] font-semibold leading-[1.05] text-white">
 			<span class="block">祝</span>
 			<span class="block">吴双</span>
 			<span class="block">生日快乐</span>
