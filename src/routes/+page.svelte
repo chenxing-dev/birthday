@@ -3,7 +3,8 @@
 >
 	<div>
 		<h1 class="font-sans text-[clamp(3.5rem,10vw,16rem)] leading-[1] text-white">
-			<span class="block">祝吴双</span>
+			<span class="block">祝</span>
+			<span class="block">吴双</span>
 			<span class="block">生日快乐</span>
 		</h1>
 		<p class="mt-8">
